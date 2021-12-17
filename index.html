@@ -28,8 +28,8 @@ body {font-size:16px;}
 <script>
   var myScrollFunc = function() {
     var y = window.scrollY;
-    if (y <= 601){
-      document.getElementById("mySidebar").style.top = String(601 - y) + "px";
+    if (y <= 601 && screen.width > 600){
+      document.getElementById("mySidebar").style.top = String(590 - y) + "px";
     }
     else{
       document.getElementById("mySidebar").style.top = String(0) + "px";
