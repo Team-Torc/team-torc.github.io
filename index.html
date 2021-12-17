@@ -34,21 +34,13 @@ body {font-size:16px;}
     else{
       document.getElementById("mySidebar").style.top = String(0) + "px";
     }
-    if ((601/(y+150) > 1))
-    {
-      document.getElementById("mySidebar").style.left = String(275 - (601/(y+150) * 275)) + "px";
-    }
-    else
-    {
-      document.getElementById("mySidebar").style.left = String(0) + "px";
-    }
   };
   window.addEventListener("scroll", myScrollFunc);
 </script>
 
 <!-- Sidebar/menu -->
 <div class="sidebarmenuitem" id="sidebarmenu">
-  <nav class="w3-sidebar w3-black w3-collapse w3-large w3-padding" style="top:610px; left: -275px; position:fixed;width:100%; z-index:3; height:620px; width:275px;font-weight:bold;" id="mySidebar"><br>
+  <nav class="w3-sidebar w3-black w3-collapse w3-large w3-padding" style="top:610px; position:fixed;width:100%; z-index:3; height:620px; width:275px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">☰</a>
     <div class="w3-container">
       <h3 class="w3-padding-64"><b>Team Torc</b></h3>
