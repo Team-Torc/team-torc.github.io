@@ -1,2 +1,2 @@
-# team-torc.github.io
+# Team Torc
 Team Torc Official Website
