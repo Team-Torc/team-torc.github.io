@@ -1,223 +1,125 @@
-<!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="team torc logo.png">
-  
-<style>
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;}
-</style>
-
 <head>
-  <meta charset="UTF-8">
-  <title>Team Torc</title>
+    <title>Team Torc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="card.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <script src="script.js"></script>
 </head>
 
-<body style="background-color:lightgrey;">
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="car-side" class="svg-inline--fa fa-car-side" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M640 320V368C640 385.7 625.7 400 608 400H574.7C567.1 445.4 527.6 480 480 480C432.4 480 392.9 445.4 385.3 400H254.7C247.1 445.4 207.6 480 160 480C112.4 480 72.94 445.4 65.33 400H32C14.33 400 0 385.7 0 368V256C0 228.9 16.81 205.8 40.56 196.4L82.2 92.35C96.78 55.9 132.1 32 171.3 32H353.2C382.4 32 409.1 45.26 428.2 68.03L528.2 193C591.2 200.1 640 254.8 640 319.1V320zM171.3 96C158.2 96 146.5 103.1 141.6 116.1L111.3 192H224V96H171.3zM272 192H445.4L378.2 108C372.2 100.4 362.1 96 353.2 96H272V192zM525.3 400C527 394.1 528 389.6 528 384C528 357.5 506.5 336 480 336C453.5 336 432 357.5 432 384C432 389.6 432.1 394.1 434.7 400C441.3 418.6 459.1 432 480 432C500.9 432 518.7 418.6 525.3 400zM205.3 400C207 394.1 208 389.6 208 384C208 357.5 186.5 336 160 336C133.5 336 112 357.5 112 384C112 389.6 112.1 394.1 114.7 400C121.3 418.6 139.1 432 160 432C180.9 432 198.7 418.6 205.3 400z"></path></svg>
+                    <span class="link-text">Team Torc</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house-chimney" class="svg-inline--fa fa-house-chimney" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M511.8 287.6L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L416 100.7V64C416 46.33 430.3 32 448 32H480C497.7 32 512 46.33 512 64V185L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6L511.8 287.6z"></path></svg>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#team" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-group" class="svg-inline--fa fa-user-group" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3c-95.73 0-173.3 77.6-173.3 173.3C0 496.5 15.52 512 34.66 512H413.3C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304zM479.1 320h-73.85C451.2 357.7 480 414.1 480 477.3C480 490.1 476.2 501.9 470 512h138C625.7 512 640 497.6 640 479.1C640 391.6 568.4 320 479.1 320zM432 256C493.9 256 544 205.9 544 144S493.9 32 432 32c-25.11 0-48.04 8.555-66.72 22.51C376.8 76.63 384 101.4 384 128c0 35.52-11.93 68.14-31.59 94.71C372.7 243.2 400.8 256 432 256z"></path></svg>
+                    <span class="link-text">Team</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#sponsors" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="handshake" class="svg-inline--fa fa-handshake" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M0 383.9l64 .0404c17.75 0 32-14.29 32-32.03V128.3L0 128.3V383.9zM48 320.1c8.75 0 16 7.118 16 15.99c0 8.742-7.25 15.99-16 15.99S32 344.8 32 336.1C32 327.2 39.25 320.1 48 320.1zM348.8 64c-7.941 0-15.66 2.969-21.52 8.328L228.9 162.3C228.8 162.5 228.8 162.7 228.6 162.7C212 178.3 212.3 203.2 226.5 218.7c12.75 13.1 39.38 17.62 56.13 2.75C282.8 221.3 282.9 221.3 283 221.2l79.88-73.1c6.5-5.871 16.75-5.496 22.62 1c6 6.496 5.5 16.62-1 22.62l-26.12 23.87L504 313.7c2.875 2.496 5.5 4.996 7.875 7.742V127.1c-40.98-40.96-96.48-63.88-154.4-63.88L348.8 64zM334.6 217.4l-30 27.49c-29.75 27.11-75.25 24.49-101.8-4.371C176 211.2 178.1 165.7 207.3 138.9L289.1 64H282.5C224.7 64 169.1 87.08 128.2 127.9L128 351.8l18.25 .0369l90.5 81.82c27.5 22.37 67.75 18.12 90-9.246l18.12 15.24c15.88 12.1 39.38 10.5 52.38-5.371l31.38-38.6l5.374 4.498c13.75 11 33.88 9.002 45-4.748l9.538-11.78c11.12-13.75 9.036-33.78-4.694-44.93L334.6 217.4zM544 128.4v223.6c0 17.62 14.25 32.05 31.1 32.05L640 384V128.1L544 128.4zM592 352c-8.75 0-16-7.246-16-15.99c0-8.875 7.25-15.99 16-15.99S608 327.2 608 336.1C608 344.8 600.8 352 592 352z"></path></svg>
+                    <span class="link-text">Sponsors</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg>
+                    <span class="link-text">Contact</span>
+                </a>
+        </ul>
+    </nav>
+    <main>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 class="h1-hero">Team Torc</h1>
-    <h8>A Team of 5 Members</h8>
-  </div>
-</div>
-
-
-<!-- Sidebar/menu Script -->
-<script>
-  var myScrollFunc = function() {
-    var y = window.scrollY;
-    if (y <= 601 && screen.width > 600){
-      document.getElementById("mySidebar").style.top = String(590 - y) + "px";
-    }
-    else{
-      document.getElementById("mySidebar").style.top = String(0) + "px";
-    }
-  };
-  window.addEventListener("scroll", myScrollFunc);
-</script>
-
-<!-- Sidebar/menu -->
-<div class="sidebarmenuitem" id="sidebarmenu">
-  <nav class="w3-sidebar w3-black w3-collapse w3-large w3-padding" style="top:610px; position:fixed;width:100%; z-index:3; height:620px; width:275px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">☰</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-64"><b>Team Torc</b></h3>
-    </div>
-    <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
-      <a href="#sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-    </div>
-  </nav>
-</div>
-
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Team Torc</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- About -->
-  <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-  
-  <!-- Team -->
-  <div class="w3-container" id="team" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>The Team.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
-
-  <!-- Team Members -->
-  <!-- Aadil Abdul Jaleel -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h4>Aadil Abdul Jaleel</h4>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <!--Home Div -->
+        <div class="hero-image">
+            <h2>Welcome to</h2>
+            <h1>TEAM TORC</h1>
+            <p>The best F1 in schools team. Torc of Rock 😆</p>
         </div>
-      </div>
-    </div>
+        <hr>
 
-    <!-- Aabid Anas -->
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h4>Aabid Anas</h4>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <!-- About Div -->
+        <div class="about" id="about">
+            <h2>About</h2>
+            <p>Torc is one of the newest teams to enter the F1 scene. With new fresh minds, it's no surprise that they are overflowing with creativity and innovation. Torc consists of five talented individuals who have faced their own set of challenges and hardships. But every time, they have managed to come out on top. The similar background they share has helped them work as a single unit. Their passion and lust for adventure will help them triumph.</p>
         </div>
-      </div>
-    </div>
+        <hr>
 
-    <!-- Abinav Pallathoor -->
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h4>Abinav Pallathoor</h4>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <!-- Team Div -->
+        <div class="team" id="team">
+            <h2>Team</h2>
+            <p>Meet our team.</p>
+        <section class="card-list">   
+            <article class="card">
+                <header class="card-header">
+                    <h2>Aadil Abdul Jaleel</h2>
+                    <p>Team Leader</p>
+                </header>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h2>Aabid Anas</h2>
+                    <p>Leader</p>
+                </header>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h2>Abinav Pallathoor</h2>
+                    <p>Leader</p>
+                </header>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h2>Mehul Philips</h2>
+                    <p>Leader</p>
+                </header>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h2>Nathanael Jackson</h2>
+                    <p>Leader</p>
+                </header>
+            </article>
+        </section>
         </div>
-      </div>
-    </div>
+        <hr>
 
-    <!-- Nathanael Jackson -->
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h4>Nathanael Jackson</h4>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <!-- Sponsors Div -->
+        <div class="sponsors" id="sponsors">
+            <h2>Sponsors</h2>
+            <p>Torc is one of the newest teams to enter the F1 scene. With new fresh minds, it's no surprise that they are overflowing with creativity and innovation. Torc consists of five talented individuals who have faced their own set of challenges and hardships. But every time, they have managed to come out on top. The similar background they share has helped them work as a single unit. Their passion and lust for adventure will help them triumph.</p>
         </div>
-      </div>
-    </div>
+        <hr>
 
-    <!-- Mehul Philips -->
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h4>Mehul Philips</h4>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <!-- Contact Div -->
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Torc is one of the newest teams to enter the F1 scene. With new fresh minds, it's no surprise that they are overflowing with creativity and innovation. Torc consists of five talented individuals who have faced their own set of challenges and hardships. But every time, they have managed to come out on top. The similar background they share has helped them work as a single unit. Their passion and lust for adventure will help them triumph.</p>
         </div>
-      </div>
-    </div>
-
-  </div>
-  
-  <!-- Sponsors -->
-  <div class="w3-container" style="margin-top:80px" id="sponsors">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Sponsors.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Sponsors Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="https://cdn-1.motorsport.com/images/amp/YW7ybVDY/s1000/formula-1-monaco-gp-2021-lewis-2.jpg" style="width:100%" alt="F1 car 1">
-      <img src="https://cdn-1.motorsport.com/images/amp/YXR93pK0/s1000/formula-1-2022-f1-car-unveil-2-2.jpg" style="width:100%" alt="F1 car 2">
-      <img src="https://cdn-1.motorsport.com/images/amp/6zQW48jY/s1000/formula-1-aston-martin-launch--6.jpg" style="width:100%"  alt="F1 car 3">
-    </div>
-
-    <div class="w3-half">
-      <img src="https://cdn-1.motorsport.com/images/amp/YW7JVPeY/s1000/max-verstappen-red-bull-racing.jpg" style="width:100%" alt="F1 car 4">
-      <img src="https://cdn-1.motorsport.com/images/amp/6xEDEKm0/s1000/formula-1-monaco-gp-1988-ayrto-2.jpg" style="width:100%" alt="F1 car 5">
-      <img src="https://cdn-1.motorsport.com/images/amp/0a9nGWk0/s1000/lewis-hamilton-mercedes-w12-va.jpg" style="width:100%" alt="F1 car 6">
-    </div>
-  </div>
-
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Want to know more? Fill out the form and we will be happy to reply.</p>
     
-    <form action="mailto:teamtorcf1@gmail.com" method="POST" enctype=”multipart/form-data” name=”EmailForm”>
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="name" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="email" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Website of Team Torc</a></p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-
+    </main>
 </body>
 </html>
