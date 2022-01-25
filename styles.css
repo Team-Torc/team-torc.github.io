@@ -221,6 +221,98 @@ main{
     color: #FF9605
 }
 
+/* Form */
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #1a1a1a;
+    color: #ececec;
+}
+
+button[type=submit] {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 200ms ease;
+    margin-bottom: 5px;
+}
+
+textarea{
+    background-color: #1a1a1a;
+    color: #ececec;
+}
+
+button[type=submit]:hover {
+  background-color: #FF9605;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.left{
+    width: 90%; float:left;
+}
+
+.right{
+    width: 10%; float:right;
+}
+
+
+/* Socials */
+.socials-svg{
+    width: 94px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    color: white;
+    transition: 300ms ease;
+}
+
+.socials-svg:hover{
+    color: #FEAB3A;
+}
+
+.socials-button{
+    visibility: hidden;
+}
+
+.socials-button>.socials-svg{
+    visibility: visible;
+}
+
+/* Card */
+.card-list{
+    padding-left: 20px;
+}
+
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+
+    transition: .2s;
+}
+
+.card h2{
+    font-size: 2rem;
+}
+
 @media only screen and (min-width: 600px){
     .navbar{
         top: 0;
@@ -234,6 +326,38 @@ main{
 
     .navbar:hover .link-text{
         display: block;
+    }
+
+    .left{
+        width: -webkit-calc(100% - 100px);
+        float:left;
+    }
+
+    .right{
+        width: 100px;
+        float:right;
+    }
+
+    .socials-svg{
+        padding-bottom: 0px;
+        padding-left: 5px;
+    }
+
+    .card-list{
+        display: flex;
+    }
+    .card:hover{
+        transform: translateY(-1rem);
+    }
+    .card:hover~.card{
+        transform: translateX(130px);
+    }
+    .card:not(:first-child){
+        margin-left: -130px;
+    }
+    .card{
+        height: 400px;
+        width: 250px;
     }
 }
 
@@ -255,5 +379,27 @@ main{
 
     main{
         margin: 0;
+    }
+
+    .left{
+        width: 100%; float:none;
+    }
+
+    .right{
+        width: 100%; float:none;
+    }
+
+    .socials-svg{
+        padding-bottom: 85px;
+        padding-left: 5px;
+    }
+
+    .card-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        height: 400px;
+        width: 85%;
     }
 }
