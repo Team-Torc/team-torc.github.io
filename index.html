@@ -2,7 +2,6 @@
 <head>
     <title>Team Torc</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="card.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <script src="script.js"></script>
 </head>
@@ -45,6 +44,7 @@
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg>
                     <span class="link-text">Contact</span>
                 </a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -117,7 +117,28 @@
         <!-- Contact Div -->
         <div class="contact" id="contact">
             <h2>Contact</h2>
-            <p>Torc is one of the newest teams to enter the F1 scene. With new fresh minds, it's no surprise that they are overflowing with creativity and innovation. Torc consists of five talented individuals who have faced their own set of challenges and hardships. But every time, they have managed to come out on top. The similar background they share has helped them work as a single unit. Their passion and lust for adventure will help them triumph.</p>
+            <div class="left">
+            <form action="https://getform.io/f/82cf663d-fe85-44be-a95d-cea01355dc3a" method="POST">
+                <label>First Name</label>
+                <input type="text" name="name" required placeholder="Your name..">
+
+                <label>Email</label>
+                <input type="email" name="email" id="email" required placeholder="Your email..">
+
+                <label>Subject</label>
+                <textarea name="text" name="message" required placeholder="Write your subject.." style="height:200px"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+            <div class="right">
+            <div class="socials">
+                <button class="socials-button" onclick="location.href='https://twitter.com/torc_team'"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square" class="socials-svg twitter svg-inline--fa fa-twitter-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8 .2 5.7 .2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3 .6 10.4 .8 15.8 .8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.45 65.45 0 0 1 -29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg></button>
+                <button class="socials-button" onclick="location.href='https://www.instagram.com/teamtorc_f1/'"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square" class="socials-svg instagram svg-inline--fa fa-instagram-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 202.7A53.34 53.34 0 1 0 277.4 256 53.38 53.38 0 0 0 224 202.7zm124.7-41a54 54 0 0 0 -30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0 -30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33S91 329.3 99.32 350.3a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33S357.1 182.7 348.8 161.7zM224 338a82 82 0 1 1 82-82A81.9 81.9 0 0 1 224 338zm85.38-148.3a19.14 19.14 0 1 1 19.13-19.14A19.1 19.1 0 0 1 309.4 189.7zM400 32H48A48 48 0 0 0 0 80V432a48 48 0 0 0 48 48H400a48 48 0 0 0 48-48V80A48 48 0 0 0 400 32zM382.9 322c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.6 1.49-132 0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.6 0-132 1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.6-1.49 132 0 25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05C384.4 216.4 384.4 295.6 382.9 322z"></path></svg></button>
+                <button class="socials-button" onclick="location.href='https://www.youtube.com/channel/UCnLN3Kv3jg0h2Mow9RYMehg'"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube-square" class="socials-svg youtube svg-inline--fa fa-youtube-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"></path></svg></button>
+                <button class="socials-button" onclick="location.href='http://www.facebook.com'"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="socials-svg facebook svg-inline--fa fa-facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.3V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0 -48-48z"></path></svg></button>
+            </div>
+            </div>
         </div>
     
     </main>
